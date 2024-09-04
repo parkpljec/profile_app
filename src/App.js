@@ -11,6 +11,7 @@ props.onChangeMode();
     }}>WEB {props.title}</a></h1>
   )
 }
+/*
 function Nav(props){
   const lis = []
   for(let i =0; i<props.topics.length; i++){
@@ -28,6 +29,7 @@ function Nav(props){
     </nav>
   )
 }
+*/
 function Article(props){
   return(
     <article>
@@ -36,26 +38,6 @@ function Article(props){
     </article>
 
   )
-}
-
-function Header(props){
-  console.log('props', props.title)
-  return(
-    <div>
-      <header>
-        <h1><a href="/">{props.title}</a></h1>
-      </header>
-    </div>
-  )
-}
-
-function Article(props){
-return(
-  <article>
-  <h2>{props.title}</h2>
-  {props.body}  
-  </article>
-)
 }
 
 function App() {
@@ -90,6 +72,8 @@ content = <Article title="Welcome" body="Hello, Web"></Article>
           Learn React
         </a>
       </header>
+      <Header />
+      <Article />
     </div>
   );
 }
